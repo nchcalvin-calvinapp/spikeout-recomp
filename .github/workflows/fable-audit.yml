@@ -74,7 +74,7 @@ jobs:
             visual artifact being eliminated; no ROMs or private recordings are here.
           claude_args: >-
             --model claude-fable-5-2
-            --max-turns 16
+            --max-turns 32
             --tools Read,Glob,Grep
             --allowedTools Read,Glob,Grep
             --json-schema '{"type":"object","properties":{"summary":{"type":"string"},"recommendation":{"type":"string","enum":["approve","revise","reject"]},"findings":{"type":"array","items":{"type":"object","properties":{"severity":{"type":"string"},"file":{"type":"string"},"line":{"type":"integer"},"detail":{"type":"string"}},"required":["severity","file","line","detail"]}},"evidence_limits":{"type":"string"}},"required":["summary","recommendation","findings","evidence_limits"]}'
